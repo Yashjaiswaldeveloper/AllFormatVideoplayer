@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <item android:id="@+id/refersh_btn"
+        android:title="Refresh"/>
+    <item android:id="@+id/share_btn"
+        android:title="Share app"/>
+    <item android:id="@+id/change_pin_btn"
+        android:title="Change Pin"/>
+
+</menu>

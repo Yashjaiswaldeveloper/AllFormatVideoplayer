@@ -1,0 +1,14 @@
+<resources>
+    <string name="app_name">All Format Video player 2022</string>
+
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="eq">Equalizer</string>
+    <string name="private_videos">Privatex Video</string>
+    <string name="vpn_process_name" translatable="false">:my.custom.vpn.process.name</string>
+    <string name="vpn_provider_authorities" translatable="false">com.anchorfree.hydrasdk.app.demo</string>
+    <string name="recycle">Recyclebin</string>
+    <string name="connect">CONNECT</string>
+    <string name="disconnect">DISCONNECT</string>
+</resources>
+

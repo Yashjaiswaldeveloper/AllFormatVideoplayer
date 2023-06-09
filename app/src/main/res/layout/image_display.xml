@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_margin="2dp"
+    android:background="@drawable/border_album"
+    android:id="@+id/next_btn"
+    android:layout_marginRight="2dp"
+    app:cardCornerRadius="7dp"
+    android:layout_height="130dp">
+    <RelativeLayout
+        android:id="@+id/next_video"
+        android:background="@color/gray"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <ImageView
+            android:layout_margin="5dp"
+            android:scaleType="fitCenter"
+            android:id="@+id/image_view"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"/>
+
+
+    </RelativeLayout>
+
+</RelativeLayout>

@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+   <item android:id="@+id/del_btn"
+       android:title="Delete"/>
+    <item android:id="@+id/proper_btn"
+        android:title="Properties"/>
+    <item android:id="@+id/filter_btn"
+        android:title="Filter Duplicate"/>
+    <item android:id="@+id/share_btn"
+        android:title="Share"/>
+    <item android:id="@+id/lock_btn"
+        android:title="Lock"/>
+    <item android:id="@+id/rename_btn"
+        android:title="Rename"/>
+</menu>

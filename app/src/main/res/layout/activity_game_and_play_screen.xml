@@ -1,0 +1,136 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:weightSum="2"
+    android:background="@color/background"
+    tools:context=".activity.GameAndPlayScreenActivity"
+    android:orientation="vertical">
+    <LinearLayout
+        android:layout_weight="1"
+        android:layout_width="match_parent"
+        android:layout_height="0dp">
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="@color/background"
+                android:paddingBottom="10dp"
+                android:scaleType="centerCrop"
+                android:src="@drawable/top_img">
+
+            </ImageView>
+            <TextView
+                android:rotation="-3"
+                android:textStyle="bold"
+                android:id="@+id/title"
+                android:shadowColor="#4C85D0"
+                android:shadowDx="-10"
+                android:shadowDy="-10"
+                android:shadowRadius="1"
+                android:textColor="#fff"
+                android:textSize="45dp"
+                android:text="Sax"
+                android:layout_marginLeft="30dp"
+                android:layout_centerVertical="true"
+                android:gravity="center"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+            </TextView>
+            <TextView
+                android:scaleY="1.3"
+                android:scaleX="1.3"
+                android:layout_below="@+id/title"
+                android:textColor="#fff"
+                android:textSize="10dp"
+                android:text="All format\nVideo Player 2021"
+                android:layout_marginLeft="30dp"
+                android:layout_centerVertical="true"
+                android:gravity="center"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+            </TextView>
+
+        </RelativeLayout>
+
+    </LinearLayout>
+    <LinearLayout
+        android:layout_weight="1"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:orientation="vertical">
+        <RelativeLayout
+            android:id="@+id/play_btn"
+            android:background="@drawable/vid_btn"
+            android:layout_marginRight="30dp"
+            android:layout_marginLeft="30dp"
+            android:layout_marginTop="50dp"
+            android:layout_width="match_parent"
+            android:layout_height="80dp">
+
+            <ImageView
+                android:id="@+id/vid_img"
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="30dp"
+                android:src="@drawable/ic_playerrrr" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_toRightOf="@+id/vid_img"
+                android:fontFamily="@font/mulishbold"
+                android:paddingLeft="15dp"
+                android:text="Video Player"
+                android:textColor="#fff"
+                android:textSize="20dp">
+
+            </TextView>
+        </RelativeLayout>
+        <RelativeLayout
+            android:id="@+id/game_btn"
+            android:background="@drawable/vid_btnn"
+            android:layout_marginTop="15dp"
+            android:layout_marginRight="30dp"
+            android:layout_marginLeft="30dp"
+            android:layout_width="match_parent"
+            android:layout_height="80dp">
+            <ImageView
+                android:src="@drawable/games"
+                android:id="@+id/gam_img"
+                android:layout_marginLeft="30dp"
+                android:layout_centerVertical="true"
+                android:layout_width="40dp"
+                android:layout_height="40dp"/>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_toRightOf="@+id/gam_img"
+                android:fontFamily="@font/mulishbold"
+                android:paddingLeft="15dp"
+                android:text="Game"
+                android:textColor="#fff"
+                android:textSize="20dp">
+
+            </TextView>
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/banner_ads"
+            android:layout_marginTop="20dp"
+            android:layout_width="match_parent"
+            android:layout_height="100dp"/>
+    </LinearLayout>
+
+</LinearLayout>

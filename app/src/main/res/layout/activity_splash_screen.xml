@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/bg_splash"
+    tools:context="com.ffapp.ffxx.ffplayers.activity.SplashActivity">
+    <View
+        android:id="@+id/center"
+        android:layout_centerInParent="true"
+        android:layout_width="match_parent"
+        android:layout_height="1dp"/>
+    <ImageView
+        android:id="@+id/img_btn"
+        android:src="@drawable/splash_logo"
+        android:layout_below="@+id/center"
+        android:layout_centerHorizontal="true"
+        android:scaleType="centerCrop"
+        android:layout_width="100dp"
+        android:layout_height="100dp">
+    </ImageView>
+
+    <TextView
+        android:id="@+id/title_btn"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/img_btn"
+        android:layout_marginTop="10dp"
+        android:fontFamily="@font/mulishbold"
+        android:gravity="center"
+        android:scaleX="1.1"
+        android:scaleY="1.1"
+        android:text="All Format Video player 2022"
+        android:textColor="#000"
+        android:textSize="20dp" />
+    <TextView
+        android:scaleY="1.2"
+        android:scaleX="1.1"
+        android:fontFamily="@font/mulishmedium"
+        android:textSize="15dp"
+        android:textColor="#000"
+        android:text="All Type Formats Supported"
+        android:layout_marginTop="5dp"
+        android:gravity="center"
+        android:layout_below="@+id/title_btn"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"/>
+</RelativeLayout>

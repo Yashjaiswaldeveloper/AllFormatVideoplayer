@@ -1,0 +1,420 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:background="@color/background"
+    android:layout_height="match_parent"
+    tools:context="com.ffapp.ffxx.ffplayers.activity.LockScreenActivity">
+
+    <TextView
+        android:fontFamily="@font/mulishbold"
+        android:textSize="22dp"
+        android:textColor="#fff"
+        android:gravity="center"
+        android:text="Video Guard"
+        android:id="@+id/icon_btn"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="40dp"
+        android:padding="5dp"
+
+        />
+    <RelativeLayout
+        android:layout_centerInParent="true"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <TextView
+            android:id="@+id/title_btn"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="20dp"
+            android:gravity="center"
+            android:text="Enter Gallery Pin"
+            android:textColor="#fff"
+            android:textSize="18dp"></TextView>
+
+        <RelativeLayout
+            android:id="@+id/point_btn"
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:layout_below="@+id/title_btn"
+            android:layout_marginTop="20dp">
+
+            <EditText
+                android:id="@+id/edit_text"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@null"
+                android:maxLength="4"
+                android:textColor="@color/background">
+
+            </EditText>
+
+            <LinearLayout
+                android:layout_width="160dp"
+                android:layout_height="30dp"
+                android:layout_centerInParent="true"
+                android:layout_centerVertical="true"
+                android:gravity="center">
+
+                <RelativeLayout
+                    android:layout_width="25dp"
+                    android:layout_height="25dp"
+                    android:layout_marginLeft="5dp"
+                    android:layout_marginRight="5dp">
+
+                    <ImageView
+                        android:id="@+id/fill_btn"
+                        android:layout_width="25dp"
+                        android:layout_height="25dp"
+                        android:layout_centerInParent="true"
+                        android:background="@drawable/circle_des"
+                        android:padding="5dp" />
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:layout_width="25dp"
+                    android:layout_height="25dp"
+                    android:layout_marginLeft="5dp"
+                    android:layout_marginRight="5dp">
+
+                    <ImageView
+                        android:id="@+id/fill_btn1"
+                        android:layout_width="25dp"
+                        android:layout_height="25dp"
+                        android:layout_centerInParent="true"
+                        android:background="@drawable/circle_des"
+                        android:padding="5dp" />
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:layout_width="25dp"
+                    android:layout_height="25dp"
+                    android:layout_marginLeft="5dp"
+                    android:layout_marginRight="5dp">
+
+                    <ImageView
+                        android:id="@+id/fill_btn2"
+                        android:layout_width="25dp"
+                        android:layout_height="25dp"
+                        android:layout_centerInParent="true"
+                        android:background="@drawable/circle_des"
+                        android:padding="5dp" />
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:layout_width="25dp"
+                    android:layout_height="25dp"
+                    android:layout_marginLeft="5dp"
+                    android:layout_marginRight="5dp">
+
+                    <ImageView
+                        android:id="@+id/fill_btn3"
+                        android:layout_width="25dp"
+                        android:layout_height="25dp"
+                        android:layout_centerInParent="true"
+                        android:background="@drawable/circle_des"
+                        android:padding="5dp" />
+                </RelativeLayout>
+            </LinearLayout>
+        </RelativeLayout>
+
+        <LinearLayout
+            android:layout_below="@+id/point_btn"
+            android:id="@+id/key_pad"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="40dp"
+            android:layout_marginTop="30dp"
+            android:layout_marginRight="40dp"
+            android:orientation="vertical">
+
+            <RelativeLayout
+                android:layout_marginTop="10dp"
+                android:layout_marginBottom="10dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <RelativeLayout
+                    android:background="@drawable/key_pad_bg"
+                    android:id="@+id/one_btn"
+                    android:layout_width="70dp"
+                    android:layout_height="70dp"
+                    android:layout_weight="1">
+                    <TextView
+                        android:layout_width="60dp"
+                        android:layout_height="60dp"
+                        android:layout_centerInParent="true"
+                        android:gravity="center"
+                        android:text="1"
+                        android:textColor="@color/colorPrimary"
+                        android:textSize="20dp">
+
+                    </TextView>
+
+
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:id="@+id/two_btn"
+                    android:layout_width="70dp"
+                    android:background="@drawable/key_pad_bg"
+                    android:layout_centerInParent="true"
+                    android:layout_height="70dp"
+                    android:layout_weight="1">
+
+                    <TextView
+                        android:layout_width="60dp"
+                        android:layout_height="60dp"
+                        android:layout_centerInParent="true"
+                        android:gravity="center"
+                        android:text="2"
+                        android:textColor="@color/colorPrimary"
+                        android:textSize="20dp" />
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:layout_alignParentRight="true"
+                    android:background="@drawable/key_pad_bg"
+                    android:id="@+id/three_btn"
+                    android:layout_width="70dp"
+                    android:layout_height="70dp"
+                    android:layout_weight="1">
+
+                    <TextView
+                        android:layout_width="60dp"
+                        android:layout_height="60dp"
+                        android:layout_centerInParent="true"
+                        android:gravity="center"
+                        android:text="3"
+                        android:textColor="@color/colorPrimary"
+                        android:textSize="20dp" />
+
+                </RelativeLayout>
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:layout_marginTop="10dp"
+                android:layout_marginBottom="10dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <RelativeLayout
+                    android:id="@+id/four_btn"
+                    android:layout_width="70dp"
+                    android:background="@drawable/key_pad_bg"
+                    android:layout_height="70dp"
+                    android:layout_weight="1">
+                    <TextView
+                        android:layout_width="60dp"
+                        android:layout_height="60dp"
+                        android:layout_centerInParent="true"
+
+                        android:gravity="center"
+                        android:text="4"
+                        android:textColor="@color/colorPrimary"
+                        android:textSize="20dp">
+
+                    </TextView>
+
+
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:layout_centerInParent="true"
+                    android:background="@drawable/key_pad_bg"
+                    android:id="@+id/five_btn"
+                    android:layout_width="70dp"
+                    android:layout_height="70dp"
+                    android:layout_weight="1">
+
+                    <TextView
+                        android:layout_width="60dp"
+                        android:layout_height="60dp"
+                        android:layout_centerInParent="true"
+                        android:gravity="center"
+                        android:text="5"
+                        android:textColor="@color/colorPrimary"
+                        android:textSize="20dp" />
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:layout_alignParentRight="true"
+                    android:background="@drawable/key_pad_bg"
+                    android:id="@+id/six_btn"
+                    android:layout_width="70dp"
+                    android:layout_height="70dp"
+
+                    android:layout_weight="1">
+
+                    <TextView
+                        android:layout_width="60dp"
+                        android:layout_height="60dp"
+                        android:layout_centerInParent="true"
+                        android:gravity="center"
+                        android:text="6"
+                        android:textColor="@color/colorPrimary"
+                        android:textSize="20dp" />
+
+                </RelativeLayout>
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:layout_marginTop="10dp"
+                android:layout_marginBottom="10dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <RelativeLayout
+                    android:background="@drawable/key_pad_bg"
+                    android:id="@+id/seven_btn"
+                    android:layout_width="70dp"
+                    android:layout_height="70dp"
+                    android:layout_marginLeft="5dp"
+                    android:layout_marginRight="10dp"
+                    android:layout_weight="1">
+
+                    <TextView
+                        android:layout_width="60dp"
+                        android:layout_height="60dp"
+                        android:layout_centerInParent="true"
+                        android:gravity="center"
+                        android:text="7"
+                        android:textColor="@color/colorPrimary"
+                        android:textSize="20dp">
+
+                    </TextView>
+
+
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:layout_centerInParent="true"
+                    android:background="@drawable/key_pad_bg"
+                    android:id="@+id/eight_btn"
+                    android:layout_width="70dp"
+                    android:layout_height="70dp"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginRight="10dp"
+                    android:layout_weight="1">
+
+                    <TextView
+                        android:layout_width="60dp"
+                        android:layout_height="60dp"
+                        android:layout_centerInParent="true"
+                        android:gravity="center"
+                        android:text="8"
+                        android:textColor="@color/colorPrimary"
+                        android:textSize="20dp" />
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:layout_alignParentRight="true"
+                    android:background="@drawable/key_pad_bg"
+                    android:id="@+id/nine_btn"
+                    android:layout_width="70dp"
+                    android:layout_height="70dp"
+                    android:layout_weight="1">
+
+                    <TextView
+                        android:layout_width="60dp"
+                        android:layout_height="60dp"
+                        android:layout_centerInParent="true"
+                        android:gravity="center"
+                        android:text="9"
+                        android:textColor="@color/colorPrimary"
+                        android:textSize="20dp" />
+
+                </RelativeLayout>
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:layout_marginTop="5dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <RelativeLayout
+                    android:id="@+id/lock_btn"
+                    android:layout_width="70dp"
+                    android:layout_height="90dp"
+                    android:layout_marginLeft="5dp"
+                    android:layout_marginRight="10dp"
+                    android:layout_weight="1">
+
+                    <TextView
+                        android:layout_width="60dp"
+                        android:layout_height="60dp"
+                        android:layout_centerInParent="true"
+                        android:gravity="center"
+                        android:textSize="25dp"></TextView>
+
+
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:layout_centerInParent="true"
+                    android:background="@drawable/key_pad_bg"
+                    android:id="@+id/zero_btn"
+                    android:layout_width="70dp"
+                    android:layout_height="70dp"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginRight="10dp"
+                    android:layout_weight="1">
+
+                    <TextView
+                        android:layout_width="60dp"
+                        android:layout_height="60dp"
+                        android:layout_centerInParent="true"
+                        android:gravity="center"
+                        android:text="0"
+                        android:textColor="@color/colorPrimary"
+                        android:textSize="20dp" />
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:layout_alignParentRight="true"
+                    android:id="@+id/clear_btn"
+                    android:layout_width="70dp"
+                    android:layout_height="70dp"
+                    android:layout_weight="1">
+
+                    <ImageView
+                        android:layout_width="60dp"
+                        android:layout_height="60dp"
+                        android:layout_centerInParent="true"
+                        android:gravity="center"
+                        android:padding="13dp"
+                        android:src="@drawable/back_ic"
+                        app:tint="#fff" />
+
+                </RelativeLayout>
+            </RelativeLayout>
+
+        </LinearLayout>
+
+        <TextView
+            android:visibility="gone"
+            android:id="@+id/forget_pass"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/key_pad"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="30dp"
+            android:text="Forget Password ?"
+            android:textColor="@color/colorPrimary" />
+
+        <View
+            android:visibility="gone"
+            android:layout_width="130dp"
+            android:layout_height="0.5dp"
+            android:layout_below="@+id/forget_pass"
+            android:layout_centerHorizontal="true"
+            android:background="@color/colorPrimary" />
+    </RelativeLayout>
+
+
+
+
+</RelativeLayout>

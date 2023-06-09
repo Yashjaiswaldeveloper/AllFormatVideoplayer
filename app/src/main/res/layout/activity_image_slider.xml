@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/background"
+    tools:context="com.ffapp.ffxx.ffplayers.activity.ImageSliderActivity">
+    <RelativeLayout
+        android:id="@+id/toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:background="@color/background">
+        <RelativeLayout
+            android:id="@+id/back_btn"
+            android:layout_width="60dp"
+            android:layout_height="60dp"
+            android:layout_centerVertical="true">
+            <ImageView
+                android:padding="5dp"
+                android:src="@drawable/ic_back_arrow"
+                android:layout_width="30dp"
+                android:layout_height="30dp"
+                android:layout_centerInParent="true">
+            </ImageView>
+        </RelativeLayout>
+        <TextView
+            android:fontFamily="@font/mulishsemibold"
+            android:id="@+id/title_img"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_toRightOf="@+id/back_btn"
+            android:paddingLeft="15dp"
+            android:text="Gallery "
+            android:textColor="#fff"
+            android:textSize="18dp" />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/banner_ads"
+        android:layout_width="match_parent"
+        android:layout_height="60dp">
+
+    </RelativeLayout>
+    <androidx.cardview.widget.CardView
+        android:layout_margin="20dp"
+        app:cardCornerRadius="10dp"
+        app:cardElevation="5dp"
+        android:layout_above="@+id/buttom_temp"
+        android:layout_below="@+id/banner_ads"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <androidx.viewpager.widget.ViewPager
+            android:id="@+id/view_pager"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/background"
+            >
+        </androidx.viewpager.widget.ViewPager>
+    </androidx.cardview.widget.CardView>
+
+
+    <RelativeLayout
+        android:id="@+id/buttom_temp"
+        android:layout_alignParentBottom="true"
+        android:layout_width="match_parent"
+        android:layout_height="80dp">
+
+        <TextView
+            android:id="@+id/share_btn"
+            android:layout_width="match_parent"
+            android:layout_height="60dp"
+            android:layout_centerInParent="true"
+            android:layout_marginLeft="40dp"
+            android:layout_marginRight="40dp"
+            android:background="@drawable/save_bg"
+            android:fontFamily="@font/mulishmedium"
+            android:gravity="center"
+            android:text="Share"
+            android:textColor="#fff"
+            android:textSize="15dp"></TextView>
+
+
+
+
+    </RelativeLayout>
+</RelativeLayout>

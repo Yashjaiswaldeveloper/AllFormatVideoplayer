@@ -1,0 +1,161 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:background="@drawable/volume_border"
+    android:layout_height="wrap_content">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <RelativeLayout
+            android:layout_marginLeft="20dp"
+            android:layout_marginTop="30dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <TextView
+                android:id="@+id/file_title"
+                android:layout_centerVertical="true"
+                android:textSize="12dp"
+                android:textColor="#fff"
+                android:text="File Name"
+                android:layout_width="100dp"
+                android:layout_height="wrap_content"/>
+            <TextView
+                android:layout_marginRight="30dp"
+                android:layout_toRightOf="@+id/file_title"
+                android:id="@+id/file_txt"
+                android:layout_centerVertical="true"
+                android:textSize="12dp"
+                android:textColor="#fff"
+                android:text="None"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"/>
+
+
+        </RelativeLayout>
+        <RelativeLayout
+            android:layout_marginLeft="20dp"
+            android:layout_marginTop="20dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <TextView
+                android:id="@+id/duration_title"
+                android:layout_centerVertical="true"
+                android:textSize="12dp"
+                android:textColor="#fff"
+                android:text="Total Video"
+                android:layout_width="100dp"
+                android:layout_height="wrap_content"/>
+            <TextView
+                android:layout_marginRight="30dp"
+                android:layout_toRightOf="@+id/duration_title"
+                android:id="@+id/duration_txt"
+                android:layout_centerVertical="true"
+                android:textSize="12dp"
+                android:textColor="#fff"
+                android:text="None"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"/>
+
+
+        </RelativeLayout>
+        <RelativeLayout
+            android:layout_marginLeft="20dp"
+            android:layout_marginTop="20dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <TextView
+                android:id="@+id/file_size_title"
+                android:layout_centerVertical="true"
+                android:textSize="12dp"
+                android:textColor="#fff"
+                android:text="File Size"
+                android:layout_width="100dp"
+                android:layout_height="wrap_content"/>
+            <TextView
+                android:layout_marginRight="30dp"
+                android:layout_toRightOf="@+id/file_size_title"
+                android:id="@+id/file_size_txt"
+                android:layout_centerVertical="true"
+                android:textSize="12dp"
+                android:textColor="#fff"
+                android:text="None"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"/>
+
+
+        </RelativeLayout>
+        <RelativeLayout
+            android:layout_marginLeft="20dp"
+            android:layout_marginTop="20dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <TextView
+                android:id="@+id/location_title"
+                android:layout_centerVertical="true"
+                android:textSize="12dp"
+                android:textColor="#fff"
+                android:text="Location"
+                android:layout_width="100dp"
+                android:layout_height="wrap_content"/>
+            <TextView
+                android:layout_marginRight="30dp"
+                android:layout_toRightOf="@+id/location_title"
+                android:id="@+id/location_txt"
+                android:layout_centerVertical="true"
+                android:textSize="12dp"
+                android:textColor="#fff"
+                android:text="None"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"/>
+
+
+        </RelativeLayout>
+        <RelativeLayout
+            android:layout_marginBottom="10dp"
+            android:layout_marginLeft="20dp"
+            android:layout_marginTop="20dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <TextView
+                android:id="@+id/deate"
+                android:layout_centerVertical="true"
+                android:textSize="14dp"
+                android:textColor="#fff"
+                android:text="Date"
+                android:layout_width="100dp"
+                android:layout_height="wrap_content"/>
+            <TextView
+                android:layout_marginRight="30dp"
+                android:layout_toRightOf="@+id/deate"
+                android:id="@+id/date_txt"
+                android:layout_centerVertical="true"
+                android:textSize="14dp"
+                android:textColor="#fff"
+                android:text="None"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"/>
+
+
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/ok_btn"
+            android:layout_marginRight="15dp"
+            android:layout_marginBottom="25dp"
+            android:layout_gravity="right"
+            android:layout_width="100dp"
+            android:layout_height="30dp">
+        <TextView
+            android:textSize="15dp"
+            android:textColor="#88F8F8"
+            android:gravity="center"
+            android:text="OK"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"/>
+        </RelativeLayout>
+    </LinearLayout>
+
+
+</RelativeLayout>

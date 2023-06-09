@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:background="@color/all_bg"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.ffapp.ffxx.ffplayers.activity.FilterDuplicateVideoActivity">
+
+    <RelativeLayout
+        android:id="@+id/toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:background="@color/background">
+
+        <RelativeLayout
+            android:id="@+id/back_btn"
+            android:layout_width="60dp"
+            android:layout_height="60dp"
+            android:layout_centerVertical="true">
+
+            <ImageView
+                android:layout_width="30dp"
+                android:layout_height="30dp"
+                android:layout_centerInParent="true"
+                android:padding="5dp"
+                android:src="@drawable/ic_back_arrow"></ImageView>
+        </RelativeLayout>
+
+        <TextView
+            android:id="@+id/title_img"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_toRightOf="@+id/back_btn"
+            android:fontFamily="@font/mulishmedium"
+            android:paddingLeft="15dp"
+            android:text="Duplicate Video "
+            android:textColor="#fff"
+            android:textSize="18dp" />
+
+        <RelativeLayout
+            android:id="@+id/del_btn"
+            android:layout_width="60dp"
+            android:layout_height="60dp"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:visibility="gone">
+
+            <ImageView
+                android:layout_width="30dp"
+                android:layout_height="30dp"
+                android:layout_centerInParent="true"
+                android:padding="5dp"
+                android:src="@drawable/dell_icon"></ImageView>
+        </RelativeLayout>
+    </RelativeLayout>
+    <com.wang.avi.AVLoadingIndicatorView
+        android:id="@+id/loding"
+        android:layout_centerInParent="true"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        app:indicatorName="ballScaleMultiple"
+        app:indicatorColor="#F76363"
+        />
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/recycle_view"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/banner_ads"
+        android:layout_below="@+id/toolbar"
+        android:background="@color/background"></androidx.recyclerview.widget.RecyclerView>
+    <RelativeLayout
+        android:layout_alignParentBottom="true"
+        android:id="@+id/banner_ads"
+        android:layout_width="match_parent"
+        android:layout_height="80dp">
+
+    </RelativeLayout>
+</RelativeLayout>

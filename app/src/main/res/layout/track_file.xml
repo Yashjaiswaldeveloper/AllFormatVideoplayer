@@ -1,0 +1,311 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:background="@drawable/volume_border"
+    android:layout_height="wrap_content">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <RelativeLayout
+            android:layout_marginLeft="20dp"
+            android:layout_marginTop="30dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <TextView
+                android:id="@+id/file_title"
+                android:layout_centerVertical="true"
+                android:textSize="18dp"
+                android:textColor="#fff"
+                android:text="Track Selection"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"/>
+
+
+
+        </RelativeLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+            <RelativeLayout
+                android:id="@+id/video_track_btn"
+                android:layout_weight="1"
+                android:layout_width="match_parent"
+                android:layout_height="60dp">
+                <TextView
+                    android:id="@+id/video_txt"
+                    android:gravity="center"
+                    android:layout_centerVertical="true"
+                    android:textSize="15dp"
+                    android:textColor="#fff"
+                    android:text="Video"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"/>
+                <View
+                    android:id="@+id/video_f"
+                    android:layout_alignParentBottom="true"
+                    android:background="#fff"
+                    android:layout_width="match_parent"
+                    android:layout_height="2dp"/>
+            </RelativeLayout>
+
+
+            <RelativeLayout
+                android:id="@+id/audio_track_btn"
+                android:layout_weight="1"
+                android:layout_width="match_parent"
+                android:layout_height="60dp">
+                <TextView
+                    android:id="@+id/audio_txt"
+                    android:gravity="center"
+                    android:layout_centerVertical="true"
+                    android:textSize="15dp"
+                    android:textColor="#fff"
+                    android:text="Audio"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"/>
+                <View
+                    android:visibility="gone"
+                    android:id="@+id/audio_f"
+                    android:layout_alignParentBottom="true"
+                    android:background="#fff"
+                    android:layout_width="match_parent"
+                    android:layout_height="2dp"/>
+            </RelativeLayout>
+        </LinearLayout>
+        <LinearLayout
+            android:id="@+id/video_temp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+            <RelativeLayout
+                android:id="@+id/_none_v_btn"
+                android:layout_marginTop="20dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+                <TextView
+                    android:paddingLeft="20dp"
+                    android:layout_centerVertical="true"
+                    android:textSize="14dp"
+                    android:textColor="#fff"
+                    android:text="None"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"/>
+                <RadioButton
+                    android:clickable="false"
+                    android:layout_marginRight="30dp"
+                    android:layout_alignParentRight="true"
+                    android:buttonTint="#fff"
+                    android:id="@+id/none_v_check"
+                    android:layout_centerVertical="true"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"/>
+
+
+            </RelativeLayout>
+            <RelativeLayout
+                android:id="@+id/auto_video_btn"
+                android:layout_marginTop="20dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+                <TextView
+                    android:paddingLeft="20dp"
+                    android:layout_centerVertical="true"
+                    android:textSize="14dp"
+                    android:textColor="#fff"
+                    android:text="Auto"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"/>
+                <RadioButton
+                    android:clickable="false"
+                    android:layout_marginRight="30dp"
+                    android:layout_alignParentRight="true"
+                    android:buttonTint="#fff"
+                    android:id="@+id/auto_video"
+                    android:layout_centerVertical="true"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"/>
+
+
+            </RelativeLayout>
+            <RelativeLayout
+                android:id="@+id/rezulation_btn"
+                android:layout_marginTop="20dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+                <TextView
+                    android:paddingLeft="20dp"
+                    android:id="@+id/rezolation_title"
+                    android:layout_centerVertical="true"
+                    android:textSize="14dp"
+                    android:textColor="#fff"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"/>
+                <RadioButton
+                    android:clickable="false"
+                    android:layout_marginRight="30dp"
+                    android:layout_alignParentRight="true"
+                    android:buttonTint="#fff"
+                    android:id="@+id/rezolation_check_txt"
+                    android:layout_centerVertical="true"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"/>
+
+
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:layout_marginBottom="10dp"
+                android:layout_marginTop="20dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+                <TextView
+                    android:id="@+id/cancel_v_butt"
+                    android:layout_toLeftOf="@+id/ok_v_butt"
+                    android:gravity="center"
+                    android:paddingLeft="20dp"
+                    android:layout_centerVertical="true"
+                    android:textSize="14dp"
+                    android:textColor="#fff"
+                    android:text="CANCEL"
+                    android:layout_width="100dp"
+                    android:layout_height="50dp"/>
+                <TextView
+                    android:id="@+id/ok_v_butt"
+                    android:textColor="#fff"
+                    android:textSize="14dp"
+                    android:text="OK"
+                    android:gravity="center"
+                    android:layout_marginRight="10dp"
+                    android:layout_alignParentRight="true"
+                    android:buttonTint="#fff"
+                    android:layout_centerVertical="true"
+                    android:layout_width="100dp"
+                    android:layout_height="50dp"/>
+
+
+            </RelativeLayout>
+        </LinearLayout>
+        <LinearLayout
+            android:visibility="gone"
+            android:id="@+id/audio_temp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+            <RelativeLayout
+                android:id="@+id/_none_audio_btn"
+                android:layout_marginTop="20dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+                <TextView
+                    android:paddingLeft="20dp"
+                    android:layout_centerVertical="true"
+                    android:textSize="14dp"
+                    android:textColor="#fff"
+                    android:text="None"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"/>
+                <RadioButton
+                    android:clickable="false"
+                    android:layout_marginRight="30dp"
+                    android:layout_alignParentRight="true"
+                    android:buttonTint="#fff"
+                    android:id="@+id/none__audio_check"
+                    android:layout_centerVertical="true"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"/>
+
+
+            </RelativeLayout>
+            <RelativeLayout
+                android:id="@+id/auto_audio_btn"
+                android:layout_marginTop="20dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+                <TextView
+                    android:paddingLeft="20dp"
+                    android:layout_centerVertical="true"
+                    android:textSize="14dp"
+                    android:textColor="#fff"
+                    android:text="Auto"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"/>
+                <RadioButton
+                    android:clickable="false"
+                    android:layout_marginRight="30dp"
+                    android:layout_alignParentRight="true"
+                    android:buttonTint="#fff"
+                    android:id="@+id/auto_audio"
+                    android:layout_centerVertical="true"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"/>
+
+
+            </RelativeLayout>
+            <RelativeLayout
+                android:id="@+id/eng_stro"
+                android:layout_marginTop="20dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+                <TextView
+                    android:paddingLeft="20dp"
+                    android:id="@+id/file_size_title"
+                    android:layout_centerVertical="true"
+                    android:textSize="14dp"
+                    android:textColor="#fff"
+                    android:text="English,Stero"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"/>
+                <RadioButton
+                    android:clickable="false"
+                    android:layout_marginRight="30dp"
+                    android:layout_alignParentRight="true"
+                    android:buttonTint="#fff"
+                    android:id="@+id/file_size_txt"
+                    android:layout_centerVertical="true"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"/>
+
+
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:layout_marginBottom="10dp"
+                android:layout_marginTop="20dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+                <TextView
+                    android:id="@+id/cancel_audio"
+                    android:layout_toLeftOf="@+id/ok_butt"
+                    android:gravity="center"
+                    android:paddingLeft="20dp"
+                    android:layout_centerVertical="true"
+                    android:textSize="14dp"
+                    android:textColor="#fff"
+                    android:text="CANCEL"
+                    android:layout_width="100dp"
+                    android:layout_height="50dp"/>
+                <TextView
+                    android:id="@+id/ok_butt"
+                    android:textColor="#fff"
+                    android:textSize="14dp"
+                    android:text="OK"
+                    android:gravity="center"
+                    android:layout_marginRight="10dp"
+                    android:layout_alignParentRight="true"
+                    android:buttonTint="#fff"
+                    android:layout_centerVertical="true"
+                    android:layout_width="100dp"
+                    android:layout_height="50dp"/>
+
+
+            </RelativeLayout>
+        </LinearLayout>
+
+
+    </LinearLayout>
+
+
+</RelativeLayout>

@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/next_btn"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_margin="3dp"
+    android:background="@drawable/border_album"
+    android:orientation="vertical"
+    app:cardCornerRadius="7dp">
+
+    <RelativeLayout
+        android:id="@+id/next_video"
+        android:layout_width="match_parent"
+        android:layout_height="130dp"
+        android:layout_marginBottom="5dp">
+
+        <ImageView
+            android:id="@+id/image_view"
+            android:layout_width="match_parent"
+            android:layout_height="130dp"
+            android:layout_margin="5dp"
+            android:scaleType="fitCenter" />
+        <ImageView
+            android:src="@drawable/dell_icon"
+            android:layout_margin="8dp"
+            android:gravity="center"
+            android:id="@+id/select_image"
+            android:layout_alignParentRight="true"
+            android:layout_width="30dp"
+            android:layout_height="30dp"/>
+
+
+    </RelativeLayout>
+
+</RelativeLayout>

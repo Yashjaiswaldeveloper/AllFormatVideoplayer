@@ -1,0 +1,166 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/background"
+    tools:context=".activity.VPNActivity">
+
+    <androidx.core.widget.NestedScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+
+            <LinearLayout
+                android:id="@+id/select_country"
+                android:layout_width="wrap_content"
+                android:layout_height="60dp"
+                android:layout_marginStart="80dp"
+                android:layout_marginTop="20dp"
+                android:background="@drawable/new_vdeo_shape"
+                android:elevation="20dp"
+                android:gravity="center_horizontal"
+                android:orientation="horizontal"
+                android:padding="5dp">
+
+
+                <ImageView
+                    android:id="@+id/countryFlag"
+                    android:layout_width="22dp"
+                    android:layout_height="25dp"
+
+                    android:layout_gravity="center_vertical"
+                    android:layout_marginStart="5dp"
+                    android:src="@drawable/ic_earth" />
+
+
+                <TextView
+                    android:id="@+id/countryName"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical"
+                    android:layout_marginStart="8dp"
+                    android:layout_marginEnd="10dp"
+                    android:layout_weight="1"
+                    android:fontFamily="@font/karla_bold"
+                    android:gravity="center_vertical"
+                    android:text="Select Location"
+                    android:textColor="@color/white"
+                    android:textSize="13dp" />
+
+
+            </LinearLayout>
+
+            <ImageView
+                android:id="@+id/connect_btn"
+                android:layout_width="200dp"
+                android:layout_height="200dp"
+                android:layout_below="@+id/select_country"
+                android:layout_centerInParent="true"
+                android:layout_marginTop="30dp"
+                android:layout_marginBottom="20dp"
+                android:src="@drawable/vpn" />
+
+            <RelativeLayout
+                android:id="@+id/ll1"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/connect_btn"
+                android:gravity="center"
+                android:layout_marginTop="20dp"
+                android:orientation="horizontal">
+
+                <pl.droidsonroids.gif.GifImageView
+                    android:id="@+id/lottie_animation"
+                    android:layout_width="74dp"
+                    android:layout_height="72dp"
+                    android:src="@drawable/arrow_anim" />
+
+                <TextView
+                    android:id="@+id/connection_state"
+                    android:layout_width="200dp"
+                    android:layout_height="40dp"
+                    android:layout_gravity="center_vertical"
+                    android:layout_marginTop="20dp"
+                    android:layout_toRightOf="@+id/lottie_animation"
+                    android:gravity="center"
+                    android:text="@string/disconnect"
+                    android:textColor="@color/white"
+                    android:textSize="18dp"
+                    android:textStyle="bold" />
+
+            </RelativeLayout>
+
+            <TextView
+                android:id="@+id/activate_btn"
+                android:layout_width="150dp"
+                android:layout_height="50dp"
+                android:layout_below="@+id/ll1"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="20dp"
+                android:background="@drawable/new_vdeo_shape"
+                android:fontFamily="@font/barlow_bold"
+                android:gravity="center"
+                android:text="Next"
+                android:textColor="#FFFFFF"
+                android:textSize="18dp" />
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20dp"
+                android:layout_below="@+id/activate_btn"
+                android:orientation="vertical">
+                <TextView
+                    android:id="@+id/countrySelected"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical"
+                    android:layout_marginStart="15dp"
+                    android:layout_marginEnd="10dp"
+                    android:layout_weight="1"
+                    android:layout_marginTop="30dp"
+                    android:fontFamily="@font/karla_bold"
+                    android:gravity="center_vertical"
+                    android:text="Countries Selected"
+                    android:textColor="@color/white"
+                    android:textSize="13dp" />
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+                    <ImageView
+                        android:id="@+id/image_icon"
+                        android:layout_width="60dp"
+                        android:layout_height="60dp"
+                        android:layout_marginTop="20dp"
+                        android:padding="10dp"
+                        android:layout_marginLeft="20dp"
+                        android:minWidth="150dp"
+                        android:text="Select Country"/>
+                    <TextView
+                        android:textColor="@color/white"
+                        android:gravity="center"
+                        android:layout_gravity="center_vertical"
+                        android:id="@+id/text_country"
+                        android:textSize="20dp"
+                        android:textStyle="bold"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content">
+
+                    </TextView>
+
+                </LinearLayout>
+
+            </LinearLayout>
+
+        </RelativeLayout>
+    </androidx.core.widget.NestedScrollView>
+
+
+</LinearLayout><?xml version="1.0" encoding="utf-8"?>

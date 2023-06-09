@@ -1,0 +1,142 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="110dp">
+
+    <RelativeLayout
+        android:id="@+id/next_video"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_toLeftOf="@+id/navi_btn">
+
+        <RelativeLayout
+            android:id="@+id/thumb_id"
+            android:layout_width="122dp"
+            android:layout_height="110dp"
+            android:layout_centerVertical="true">
+
+            <ImageView
+                android:id="@+id/thumb"
+                android:layout_width="100dp"
+                android:layout_height="90dp"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="15dp"
+                android:layout_marginTop="7dp"
+                android:scaleType="centerCrop" />
+
+            <TextView
+                android:id="@+id/tag_lay"
+                android:layout_width="30dp"
+                android:layout_height="15dp"
+                android:layout_marginLeft="7dp"
+                android:layout_marginTop="8dp"
+                android:background="@drawable/new_vdeo_shape"
+                android:gravity="center"
+                android:text="New"
+                android:textColor="#fff"
+                android:textSize="8dp" />
+
+            <RelativeLayout
+                android:layout_width="60dp"
+                android:layout_height="15dp"
+                android:layout_alignParentRight="true"
+                android:layout_alignParentBottom="true"
+                android:layout_marginRight="12dp"
+                android:layout_marginBottom="15dp"
+                android:background="#80000000">
+
+                <ImageView
+                    android:id="@+id/img"
+                    android:layout_width="15dp"
+                    android:layout_height="15dp"
+                    android:layout_centerVertical="true"
+                    android:padding="3dp"
+                    android:src="@drawable/ic_play" />
+
+                <TextView
+                    android:id="@+id/time_duration"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_centerInParent="true"
+                    android:layout_centerVertical="true"
+                    android:layout_toRightOf="@+id/img"
+                    android:gravity="center"
+                    android:text="10:00"
+                    android:textColor="#fff"
+                    android:textSize="8dp">
+
+                </TextView>
+            </RelativeLayout>
+        </RelativeLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:layout_toRightOf="@+id/thumb_id"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/video_name"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:fontFamily="@font/mulishmedium"
+                android:paddingLeft="10dp"
+                android:text="Video Name"
+                android:textColor="#000"
+                android:textSize="13dp">
+
+            </TextView>
+
+            <TextView
+                android:id="@+id/video_date"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:fontFamily="@font/mulishsemibold"
+                android:paddingLeft="10dp"
+                android:text="Modified :18-06-2021"
+                android:textSize="11dp">
+
+            </TextView>
+
+            <TextView
+                android:id="@+id/video_size"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="12dp"
+                android:layout_weight="1"
+                android:paddingLeft="10dp"
+                android:text="Size:9.55 MB"
+                android:textColor="#000"
+                android:textSize="10dp">
+
+            </TextView>
+
+        </LinearLayout>
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/navi_btn"
+        android:layout_alignParentRight="true"
+        android:layout_width="60dp"
+        android:layout_height="match_parent">
+        <ImageView
+            android:padding="5dp"
+            android:id="@+id/navi_img"
+            android:layout_centerInParent="true"
+            android:src="@drawable/ic_more"
+            android:layout_marginLeft="15dp"
+            android:layout_centerVertical="true"
+            android:layout_width="30dp"
+            android:layout_height="30dp"/>
+        <CheckBox
+            android:visibility="gone"
+            android:id="@+id/check_btn"
+            android:layout_centerInParent="true"
+            android:layout_width="30dp"
+            android:layout_height="40dp"/>
+    </RelativeLayout>
+
+</RelativeLayout>

@@ -1,0 +1,116 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:background="@color/background"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+    <RelativeLayout
+        android:id="@+id/toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="80dp">
+        <RelativeLayout
+            android:layout_centerVertical="true"
+            android:layout_toLeftOf="@+id/navigation"
+            android:id="@+id/next_video"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <RelativeLayout
+                android:id="@+id/image_temp"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="5dp"
+                android:layout_width="70dp"
+                android:layout_height="70dp">
+
+                <ImageView
+                    android:id="@+id/image_one"
+                    android:layout_width="70dp"
+                    android:layout_height="70dp"
+                    android:layout_centerVertical="true"
+                    android:padding="8dp"
+                    android:src="@drawable/ic_folder" />
+                <TextView
+                    android:padding="2dp"
+                    android:layout_marginRight="10dp"
+                    android:fontFamily="@font/mulishmedium"
+                    android:layout_alignParentRight="true"
+                    android:visibility="visible"
+                    android:id="@+id/tag_lay"
+                    android:textColor="#fff"
+                    android:textSize="9dp"
+                    android:gravity="center"
+                    android:text="New"
+                    android:background="@drawable/tag_new"
+                    android:layout_width="25dp"
+                    android:layout_height="15dp"/>
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:layout_toRightOf="@+id/image_temp"
+                android:layout_centerVertical="true"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <TextView
+                    android:id="@+id/folder_nm"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:fontFamily="@font/mulishsemibold"
+                    android:gravity="center_vertical"
+                    android:paddingLeft="15dp"
+                    android:singleLine="true"
+                    android:text="Folder Name"
+                    android:textColor="#F8EDED"
+                    android:textSize="14dp"></TextView>
+
+                <TextView
+                    android:id="@+id/videoCount"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/folder_nm"
+                    android:layout_weight="1"
+                    android:fontFamily="@font/mulishsemibold"
+                    android:gravity="center_vertical"
+                    android:paddingLeft="15dp"
+                    android:text="Video Count"
+                    android:textColor="#C6BABA"
+                    android:textSize="11dp"></TextView>
+            </RelativeLayout>
+        </RelativeLayout>
+        <RelativeLayout
+            android:layout_centerVertical="true"
+            android:id="@+id/navigation"
+            android:layout_alignParentRight="true"
+            android:layout_width="70dp"
+            android:layout_height="wrap_content">
+            <ImageView
+                android:layout_alignParentRight="true"
+                android:padding="5dp"
+                android:layout_centerVertical="true"
+                android:id="@+id/neavi_one"
+                android:src="@drawable/ic_more"
+                android:layout_marginRight="10dp"
+                android:layout_width="30dp"
+                android:layout_height="30dp"/>
+        </RelativeLayout>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:layout_alignParentBottom="true"
+            android:layout_marginLeft="30dp"
+            android:layout_marginRight="30dp"
+            android:background="#F6F6F6" />
+    </RelativeLayout>
+    <RelativeLayout
+        android:id="@+id/ad_banerr"
+        android:layout_below="@+id/toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+    </RelativeLayout>
+
+
+
+</RelativeLayout>

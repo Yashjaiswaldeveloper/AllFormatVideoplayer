@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.ffapp.ffxx.ffplayers.fragement.SaveVideoFragment">
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/grid_view"
+        android:background="@color/background"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" />
+    <TextView
+        android:visibility="gone"
+        android:id="@+id/data_not"
+        android:gravity="center"
+        android:textColor="#000"
+        android:textSize="18dp"
+        android:text="Data not available"
+        android:layout_centerInParent="true"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+    </TextView>
+</RelativeLayout>

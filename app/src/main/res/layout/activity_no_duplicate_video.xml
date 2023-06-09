@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/background"
+    tools:context="com.ffapp.ffxx.ffplayers.activity.NoDuplicateVideoActivity">
+
+    <RelativeLayout
+        android:id="@+id/toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:background="@color/red">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:fontFamily="@font/mulishmedium"
+            android:gravity="center"
+            android:text="All Format Video player 2022"
+            android:textColor="#fff"
+            android:textSize="18dp"></TextView>
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/duplicate_temp"
+        android:layout_width="match_parent"
+        android:layout_height="100dp"
+        android:background="@color/background"
+        android:layout_below="@+id/toolbar">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:fontFamily="@font/mulishmedium"
+            android:gravity="center"
+            android:text="NO DUPLICATE FILES FOUND"
+            android:textColor="#F16767"
+            android:textSize="20dp" />
+    </RelativeLayout>
+
+    <androidx.cardview.widget.CardView
+        android:layout_margin="10dp"
+        app:cardCornerRadius="10dp"
+        android:layout_below="@+id/duplicate_temp"
+        android:layout_width="match_parent"
+        android:layout_height="300dp">
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@color/gray">
+            <TextView
+                android:fontFamily="@font/mulishmedium"
+                android:textColor="#F16767"
+                android:gravity="center"
+                android:text="Loding ads...."
+                android:layout_centerInParent="true"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+            </TextView>
+        </RelativeLayout>
+
+    </androidx.cardview.widget.CardView>
+
+</RelativeLayout>

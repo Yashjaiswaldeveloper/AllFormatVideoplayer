@@ -1,0 +1,440 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/background"
+    tools:context="com.ffapp.ffxx.ffplayers.activity.SettingActivity">
+
+    <RelativeLayout
+        android:id="@+id/toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:background="@color/red">
+
+        <RelativeLayout
+            android:id="@+id/back_btn"
+            android:layout_width="60dp"
+            android:layout_height="60dp"
+            android:layout_centerVertical="true">
+
+            <ImageView
+                android:layout_width="30dp"
+                android:layout_height="30dp"
+                android:layout_centerInParent="true"
+                android:padding="5dp"
+                android:src="@drawable/ic_back_arrow"></ImageView>
+
+        </RelativeLayout>
+
+        <TextView
+            android:id="@+id/title_img"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_toRightOf="@+id/back_btn"
+            android:fontFamily="@font/mulishbold"
+            android:paddingLeft="15dp"
+            android:text="Setting"
+            android:textColor="#fff"
+            android:textSize="18dp" />
+    </RelativeLayout>
+    <ScrollView
+        android:layout_above="@+id/banner_ads"
+        android:layout_below="@+id/toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+                <TextView
+                    android:visibility="gone"
+                    android:paddingLeft="20dp"
+                    android:text="ATE Colors"
+                    android:layout_marginTop="15dp"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+                </TextView>
+                <RelativeLayout
+                    android:visibility="gone"
+                    android:paddingLeft="20dp"
+                    android:layout_marginTop="20dp"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+                    <TextView
+                        android:textSize="16dp"
+                        android:id="@+id/text_a"
+                        android:text="Accent Color"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content">
+                    </TextView>
+                    <TextView
+                        android:textSize="13dp"
+                        android:layout_below="@+id/text_a"
+                        android:text="Change the accent theme color"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content">
+                    </TextView>
+
+                </RelativeLayout>
+                <RelativeLayout
+                    android:layout_gravity="center"
+                    android:visibility="gone"
+                    android:paddingLeft="20dp"
+                    android:layout_marginTop="20dp"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+                    <TextView
+                        android:textSize="16dp"
+                        android:id="@+id/text_p"
+                        android:text="Primary Text Color"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content">
+                    </TextView>
+                    <TextView
+                        android:textSize="13dp"
+                        android:layout_below="@+id/text_p"
+                        android:text="Change the primary text color"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content">
+                    </TextView>
+
+                </RelativeLayout>
+                <RelativeLayout
+                    android:visibility="gone"
+                    android:paddingLeft="20dp"
+                    android:layout_marginTop="20dp"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+                    <TextView
+                        android:textSize="16dp"
+                        android:id="@+id/text_s"
+                        android:text="Secondary Color"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content">
+                    </TextView>
+                    <TextView
+                        android:textSize="13dp"
+                        android:layout_below="@+id/text_s"
+                        android:text="Change the secondary text color"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content">
+                    </TextView>
+
+                </RelativeLayout>
+                <TextView
+                    android:textColor="#F6F4F4"
+                    android:fontFamily="@font/mulishbold"
+                    android:paddingLeft="20dp"
+                    android:text="Player"
+                    android:textSize="18dp"
+                    android:layout_marginTop="25dp"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+                </TextView>
+                <RelativeLayout
+                    android:id="@+id/orientation_btn"
+                    android:paddingLeft="20dp"
+                    android:layout_marginTop="20dp"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+                    <TextView
+                        android:id="@+id/text_o"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:fontFamily="@font/mulishmedium"
+                        android:text="Orientation"
+                        android:textColor="@color/gray"
+                        android:textSize="16dp"></TextView>
+
+                    <TextView
+                        android:id="@+id/rotation"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@+id/text_o"
+                        android:fontFamily="@font/mulishmedium"
+                        android:text="Portrait"
+                        android:textColor="@color/gray"
+                        android:textSize="13dp"></TextView>
+
+                </RelativeLayout>
+                <RelativeLayout
+                    android:fontFamily="@font/mulishmedium"
+                    android:id="@+id/resume_video"
+                    android:paddingLeft="20dp"
+                    android:layout_marginTop="20dp"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+                    <TextView
+                        android:id="@+id/text_r"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:fontFamily="@font/mulishmedium"
+                        android:text="Resume Video"
+                        android:textColor="@color/gray"
+                        android:textSize="16dp"></TextView>
+
+                    <TextView
+                        android:fontFamily="@font/mulishmedium"
+                        android:id="@+id/resume_vid"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@+id/text_r"
+                        android:text="Ask start play"
+                        android:textColor="@color/gray"
+                        android:textSize="13dp"></TextView>
+
+                </RelativeLayout>
+                <RelativeLayout
+                    android:id="@+id/auto_play"
+                    android:paddingLeft="20dp"
+                    android:layout_marginTop="20dp"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+                    <TextView
+                        android:id="@+id/text_auto"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:fontFamily="@font/mulishmedium"
+                        android:text="Auto Play"
+                        android:textColor="@color/gray"
+                        android:textSize="16dp"></TextView>
+                    <TextView
+                        android:fontFamily="@font/mulishmedium"
+                        android:textSize="13dp"
+                        android:layout_below="@+id/text_auto"
+                        android:text="Auto play to next video"
+                        android:textColor="@color/gray"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content">
+                    </TextView>
+                    <androidx.appcompat.widget.SwitchCompat
+                        android:clickable="false"
+                        android:layout_alignParentRight="true"
+                        android:id="@+id/switch_auto"
+                        android:layout_marginRight="15dp"
+                        android:layout_width="100dp"
+                        android:layout_height="40dp">
+
+                    </androidx.appcompat.widget.SwitchCompat>
+
+                </RelativeLayout>
+                <RelativeLayout
+                    android:id="@+id/battry_lock_sc"
+                    android:paddingLeft="20dp"
+                    android:layout_marginTop="20dp"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+                    <TextView
+                        android:fontFamily="@font/mulishmedium"
+                        android:textSize="16dp"
+                        android:id="@+id/battry_lock"
+                        android:text="Battery/Lock"
+                        android:textColor="@color/gray"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content">
+                    </TextView>
+                    <TextView
+                        android:fontFamily="@font/mulishmedium"
+                        android:textSize="13dp"
+                        android:layout_below="@+id/battry_lock"
+                        android:textColor="@color/gray"
+                        android:text="Battery or time seen during video play"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content">
+                    </TextView>
+
+                    <androidx.appcompat.widget.SwitchCompat
+                        android:layout_width="match_parent"
+                        android:layout_height="40dp"
+                        android:layout_marginRight="15dp"
+                        android:clickable="false">
+
+                    </androidx.appcompat.widget.SwitchCompat>
+
+                </RelativeLayout>
+                <TextView
+                    android:fontFamily="@font/mulishbold"
+                    android:textSize="18dp"
+                    android:paddingLeft="20dp"
+                    android:text="Help"
+                    android:textColor="@color/gray"
+                    android:layout_marginTop="25dp"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+                </TextView>
+                <RelativeLayout
+                    android:id="@+id/recover_pin"
+                    android:paddingLeft="20dp"
+                    android:layout_marginTop="20dp"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+                    <TextView
+                        android:id="@+id/pin_re"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:fontFamily="@font/mulishmedium"
+                        android:text="Recovery Pin"
+                        android:textColor="@color/gray"
+                        android:textSize="16dp"></TextView>
+                    <TextView
+                        android:fontFamily="@font/mulishmedium"
+                        android:textSize="13dp"
+                        android:textColor="@color/gray"
+                        android:layout_below="@+id/pin_re"
+                        android:text="Recovery pin via OTP"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content">
+                    </TextView>
+
+
+                </RelativeLayout>
+                <RelativeLayout
+                    android:id="@+id/change_password"
+                    android:paddingLeft="20dp"
+                    android:layout_marginTop="20dp"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+                    <TextView
+                        android:id="@+id/change_pin"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:fontFamily="@font/mulishmedium"
+                        android:text="Change Pin"
+                        android:textColor="@color/gray"
+                        android:textSize="16dp"></TextView>
+                    <TextView
+                        android:fontFamily="@font/mulishmedium"
+                        android:textSize="13dp"
+                        android:layout_below="@+id/change_pin"
+                        android:textColor="@color/gray"
+                        android:text="Change your current Vault pin "
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content">
+                    </TextView>
+
+
+                </RelativeLayout>
+                <RelativeLayout
+                    android:id="@+id/feed_back"
+                    android:paddingLeft="20dp"
+                    android:layout_marginTop="20dp"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+                    <TextView
+                        android:fontFamily="@font/mulishmedium"
+                        android:textSize="16dp"
+                        android:id="@+id/fid_back"
+                        android:text="Feedback"
+                        android:textColor="@color/gray"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content">
+                    </TextView>
+                    <TextView
+                        android:fontFamily="@font/mulishmedium"
+                        android:textSize="13dp"
+                        android:layout_below="@+id/fid_back"
+                        android:textColor="@color/gray"
+                        android:text="Report bug and tell us what to improve"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content">
+                    </TextView>
+
+
+                </RelativeLayout>
+                <TextView
+                    android:textSize="18dp"
+                    android:fontFamily="@font/mulishbold"
+                    android:textColor="@color/gray"
+                    android:paddingLeft="20dp"
+                    android:text="Check Update"
+                    android:layout_marginTop="25dp"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+                </TextView>
+                <RelativeLayout
+                    android:paddingLeft="20dp"
+                    android:layout_marginTop="20dp"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:fontFamily="@font/mulishmedium"
+                        android:text="About"
+                        android:textColor="@color/gray"
+                        android:textSize="16dp">
+
+                    </TextView>
+
+
+
+                </RelativeLayout>
+                <RelativeLayout
+                    android:paddingLeft="20dp"
+                    android:layout_marginTop="20dp"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+                    <TextView
+                        android:id="@+id/privacybtn"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:fontFamily="@font/mulishmedium"
+                        android:text="Privacy Policy"
+                        android:textColor="@color/gray"
+                        android:textSize="16dp">
+
+                    </TextView>
+                </RelativeLayout>
+                <RelativeLayout
+                    android:layout_marginBottom="20dp"
+                    android:paddingLeft="20dp"
+                    android:layout_marginTop="20dp"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+                    <TextView
+                        android:fontFamily="@font/mulishmedium"
+                        android:textSize="16dp"
+                        android:id="@+id/Version"
+                        android:text="Version"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content">
+                    </TextView>
+                    <TextView
+                        android:fontFamily="@font/mulishmedium"
+                        android:textSize="13dp"
+                        android:layout_below="@+id/Version"
+                        android:text="1.0"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content">
+                    </TextView>
+
+
+                </RelativeLayout>
+            </LinearLayout>
+
+
+        </RelativeLayout>
+
+    </ScrollView>
+
+<RelativeLayout
+    android:layout_alignParentBottom="true"
+    android:id="@+id/banner_ads"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+</RelativeLayout>
+</RelativeLayout>

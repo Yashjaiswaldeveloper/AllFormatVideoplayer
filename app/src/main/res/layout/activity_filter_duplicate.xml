@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.ffapp.ffxx.ffplayers.activity.FilterDuplicateActivity">
+    <RelativeLayout
+        android:background="@color/background"
+        android:id="@+id/toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="60dp">
+        <RelativeLayout
+            android:id="@+id/back_btn"
+            android:layout_centerVertical="true"
+            android:layout_width="60dp"
+            android:layout_height="60dp">
+            <ImageView
+                android:padding="5dp"
+                android:src="@drawable/ic_back_arrow"
+                android:layout_centerInParent="true"
+                android:layout_width="30dp"
+                android:layout_height="30dp">
+            </ImageView>
+
+        </RelativeLayout>
+        <TextView
+            android:fontFamily="@font/mulishmedium"
+            android:textSize="18dp"
+            android:textColor="#fff"
+            android:layout_centerVertical="true"
+            android:gravity="center"
+            android:text="Duplicate "
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"/>
+    </RelativeLayout>
+    <com.wang.avi.AVLoadingIndicatorView
+        android:id="@+id/loding"
+        android:layout_centerInParent="true"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        app:indicatorName="ballScaleMultiple"
+        app:indicatorColor="#F76363"
+        />
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/recycle_view"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/toolbar"
+        android:background="@color/background"
+        android:nestedScrollingEnabled="false" />
+
+</RelativeLayout>

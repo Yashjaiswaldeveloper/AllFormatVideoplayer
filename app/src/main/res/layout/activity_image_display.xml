@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.ffapp.ffxx.ffplayers.activity.GalleryImageActivity">
+    <RelativeLayout
+        android:background="@color/background"
+        android:id="@+id/toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="60dp">
+        <RelativeLayout
+            android:id="@+id/back_btn"
+            android:layout_centerVertical="true"
+            android:layout_width="60dp"
+            android:layout_height="60dp">
+            <ImageView
+                android:layout_marginLeft="10dp"
+                android:layout_centerVertical="true"
+                android:padding="5dp"
+                android:src="@drawable/ic_back_arrow"
+                android:layout_width="30dp"
+                android:layout_height="30dp">
+            </ImageView>
+
+        </RelativeLayout>
+        <TextView
+            android:fontFamily="@font/mulishsemibold"
+            android:id="@+id/title"
+            android:paddingLeft="10dp"
+            android:layout_toRightOf="@+id/back_btn"
+            android:textSize="16dp"
+            android:textColor="#fff"
+            android:layout_centerVertical="true"
+            android:text="Gallery "
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"/>
+    </RelativeLayout>
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/recycle_view"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/background"
+        android:layout_above="@+id/banner_ads"
+        android:layout_below="@+id/toolbar"></androidx.recyclerview.widget.RecyclerView>
+
+    <RelativeLayout
+        android:id="@+id/banner_ads"
+        android:layout_width="match_parent"
+        android:layout_height="80dp"
+        android:layout_alignParentBottom="true"
+        android:background="@color/background"></RelativeLayout>
+</RelativeLayout>
